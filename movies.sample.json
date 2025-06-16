@@ -1,0 +1,50 @@
+[
+    {
+        "source": "tmdb",
+        "tmdbId": 872585,
+        "title": "Oppenheimer",
+        "overview": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+        "genres": ["Drama", "History"],
+        "releaseDate": "2023-07-21T00:00:00.000Z",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/8Gxv3kR0eBvqXbyaY8jvT4h9izT.jpg",
+        "trailerUrl": "https://www.youtube.com/watch?v=uYPbbksJxIg",
+        "videoUrl": "https://vidsrc.me/embed/movie/872585",
+        "createdBy": null
+    },
+    {
+        "source": "tmdb",
+        "tmdbId": 298618,
+        "title": "The Flash",
+        "overview": "Barry Allen travels back in time to prevent his mother’s murder, which brings unintended consequences.",
+        "genres": ["Action", "Adventure", "Sci-Fi"],
+        "releaseDate": "2023-06-16T00:00:00.000Z",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg",
+        "trailerUrl": "https://www.youtube.com/watch?v=hebWYacbdvc",
+        "videoUrl": "https://vidsrc.me/embed/movie/298618",
+        "createdBy": null
+    },
+    {
+        "source": "tmdb",
+        "tmdbId": 667538,
+        "title": "Transformers: Rise of the Beasts",
+        "overview": "The Autobots face a new threat in a battle set in the 1990s, introducing the Maximals to the conflict.",
+        "genres": ["Action", "Sci-Fi"],
+        "releaseDate": "2023-06-09T00:00:00.000Z",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
+        "trailerUrl": "https://www.youtube.com/watch?v=itnqEauWQZM",
+        "videoUrl": "https://vidsrc.me/embed/movie/667538",
+        "createdBy": null
+    },
+    {
+        "source": "tmdb",
+        "tmdbId": 507089,
+        "title": "Five Nights at Freddy's",
+        "overview": "A troubled security guard begins working at Freddy Fazbear's Pizza and discovers the animatronics are not what they seem.",
+        "genres": ["Horror", "Thriller"],
+        "releaseDate": "2023-10-27T00:00:00.000Z",
+        "posterUrl": "https://image.tmdb.org/t/p/w500/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg",
+        "trailerUrl": "https://www.youtube.com/watch?v=0VH9WCFV6XQ",
+        "videoUrl": "https://vidsrc.me/embed/movie/507089",
+        "createdBy": null
+    }
+]
