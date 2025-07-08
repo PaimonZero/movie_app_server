@@ -1,26 +1,11 @@
-const router = require("express").Router();
-const ctrls = require("../controllers/movieController");
-const tokenUtils = require("../middlewares/jwt");
+const express = require("express")
+const router = express.Router()
+const ctrl = require("../controllers/movieController")
 
-// Lấy chi tiết phim theo ID
-router.get("/:id", tokenUtils.verifyAccessToken, ctrls.getMovieById);
-// Sửa phim manual
-router.put(
-    "/:id",
-    tokenUtils.verifyAccessToken,
-    tokenUtils.isAdmin,
-    ctrls.updateMovie
-);
-// Xoá phim manual
-router.delete(
-    "/:id",
-    tokenUtils.verifyAccessToken,
-    tokenUtils.isAdmin,
-    ctrls.deleteMovie
-);
-// Tạo phim manual (chỉ admin)
-router.post("/", tokenUtils.verifyAccessToken, tokenUtils.isAdmin, ctrls.createMovie);
-// Lấy danh sách phim
-router.get("/", tokenUtils.verifyAccessToken, ctrls.getMovies);
+router.post("/", ctrl.createMovie)
+router.get("/", ctrl.getAllMovies)
+router.get("/:id", ctrl.getMovieById)
+router.put("/:id", ctrl.updateMovie)
+router.delete("/:id", ctrl.deleteMovie)
 
-module.exports = router;
+module.exports = router

@@ -1,0 +1,329 @@
+[
+  {
+    "title": "Misericordia",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/i1eFKvcUNdyNd53YeEOK2vNkBsL.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Misericordia",
+    "rating": 7.039,
+    "voteCount": 4091,
+    "runtime": 149,
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Romance"
+    ],
+    "budgetUSD": 241922263,
+    "revenueUSD": 491075840,
+    "productionCompany": "Netflix"
+  },
+  {
+    "title": "Despicable Me 4",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wWba3TaojhK7NdycRhoQpsG0FaH.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Despicable Me 4",
+    "rating": 9.22,
+    "voteCount": 1018,
+    "runtime": 100,
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "budgetUSD": 48663430,
+    "revenueUSD": 297049349,
+    "productionCompany": "Warner Bros"
+  },
+  {
+    "title": "Mufasa: The Lion King",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/jbOSUAWMGzGL1L4EaUF8K6zYFo7.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Mufasa: The Lion King",
+    "rating": 9.224,
+    "voteCount": 2087,
+    "runtime": 132,
+    "genres": [
+      "Fantasy",
+      "Thriller"
+    ],
+    "budgetUSD": 70382971,
+    "revenueUSD": 355988011,
+    "productionCompany": "Warner Bros"
+  },
+  {
+    "title": "Your Fault",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1sQA7lfcF9yUyoLYC0e6Zo3jmxE.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Your Fault",
+    "rating": 7.752,
+    "voteCount": 2950,
+    "runtime": 128,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "budgetUSD": 95534072,
+    "revenueUSD": 391273386,
+    "productionCompany": "Netflix"
+  },
+  {
+    "title": "Kung Fu Panda 4",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/nqXsAaQsKw2gKpkfhIgjXNDRqg7.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Kung Fu Panda 4",
+    "rating": 6.021,
+    "voteCount": 993,
+    "runtime": 126,
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "budgetUSD": 36914964,
+    "revenueUSD": 210051257,
+    "productionCompany": "Warner Bros"
+  },
+  {
+    "title": "Deadpool & Wolverine",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Deadpool & Wolverine",
+    "rating": 8.792,
+    "voteCount": 1102,
+    "runtime": 91,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Comedy"
+    ],
+    "budgetUSD": 57062348,
+    "revenueUSD": 561003579,
+    "productionCompany": "Pixar"
+  },
+  {
+    "title": "Possessions",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/39a7zYZvkGfs7EOVVK3dQlWyYJ0.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Possessions",
+    "rating": 8.124,
+    "voteCount": 1146,
+    "runtime": 110,
+    "genres": [
+      "Drama",
+      "Action",
+      "Thriller"
+    ],
+    "budgetUSD": 168104471,
+    "revenueUSD": 106760354,
+    "productionCompany": "20th Century Studios"
+  },
+  {
+    "title": "The Fantastic Four: First Steps",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/x26MtUlwtWD26d0G0FXcppxCJio.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for The Fantastic Four: First Steps",
+    "rating": 6.418,
+    "voteCount": 3239,
+    "runtime": 98,
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ],
+    "budgetUSD": 95800564,
+    "revenueUSD": 85762147,
+    "productionCompany": "Netflix"
+  },
+  {
+    "title": "Daniela Forever",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4ToIyJVVSTPrU8s5jho0v3OOyvg.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Daniela Forever",
+    "rating": 9.668,
+    "voteCount": 3671,
+    "runtime": 123,
+    "genres": [
+      "Sci-Fi",
+      "Comedy"
+    ],
+    "budgetUSD": 126798175,
+    "revenueUSD": 69131421,
+    "productionCompany": "Warner Bros"
+  },
+  {
+    "title": "The Owner",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dCe94o81DIYamwyKZ09ISF5MFrw.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for The Owner",
+    "rating": 9.744,
+    "voteCount": 1018,
+    "runtime": 106,
+    "genres": [
+      "Action",
+      "Fantasy"
+    ],
+    "budgetUSD": 27417920,
+    "revenueUSD": 353888355,
+    "productionCompany": "Disney"
+  },
+  {
+    "title": "Skin. Like. Sun.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/uCkANtG6ezb7hjRKVudY3PUcbvn.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Skin. Like. Sun.",
+    "rating": 5.87,
+    "voteCount": 1186,
+    "runtime": 137,
+    "genres": [
+      "Sci-Fi",
+      "Romance",
+      "Adventure"
+    ],
+    "budgetUSD": 244856050,
+    "revenueUSD": 877910828,
+    "productionCompany": "Disney"
+  },
+  {
+    "title": "Making Squid Game: The Challenge",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/78yTLvtsMntVN1cLfzBuZj870pe.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Making Squid Game: The Challenge",
+    "rating": 8.054,
+    "voteCount": 4342,
+    "runtime": 143,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "budgetUSD": 88015823,
+    "revenueUSD": 518046287,
+    "productionCompany": "Warner Bros"
+  },
+  {
+    "title": "Ligaw",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yc8V3KEnhvPrzXpdYTXdTvjpOb5.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Ligaw",
+    "rating": 9.377,
+    "voteCount": 1346,
+    "runtime": 90,
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "budgetUSD": 249806294,
+    "revenueUSD": 69714503,
+    "productionCompany": "Universal Pictures"
+  },
+  {
+    "title": "Marriage Unplugged",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/3H99Wl52sBPRqXZ3LJjgODOLfwX.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Marriage Unplugged",
+    "rating": 7.644,
+    "voteCount": 3755,
+    "runtime": 117,
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Thriller"
+    ],
+    "budgetUSD": 108452843,
+    "revenueUSD": 556283498,
+    "productionCompany": "Universal Pictures"
+  },
+  {
+    "title": "Fast X",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/fiVW06jE7z9YnO4trhaMEdclSiC.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Fast X",
+    "rating": 8.735,
+    "voteCount": 3200,
+    "runtime": 140,
+    "genres": [
+      "Drama",
+      "Fantasy"
+    ],
+    "budgetUSD": 90827186,
+    "revenueUSD": 323785755,
+    "productionCompany": "Disney"
+  },
+  {
+    "title": "Ne Zha 2",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/293Mo4GWf7Tl0TfAr5NFghqeMy7.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Ne Zha 2",
+    "rating": 5.895,
+    "voteCount": 117,
+    "runtime": 146,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "budgetUSD": 132237067,
+    "revenueUSD": 150662702,
+    "productionCompany": "Netflix"
+  },
+  {
+    "title": "The Wild Robot",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for The Wild Robot",
+    "rating": 6.722,
+    "voteCount": 528,
+    "runtime": 125,
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Comedy"
+    ],
+    "budgetUSD": 164581032,
+    "revenueUSD": 849362267,
+    "productionCompany": "Pixar"
+  },
+  {
+    "title": "The Substance",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cGm2qnmXx9tFabmzEIkJZjCJdQd.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for The Substance",
+    "rating": 9.424,
+    "voteCount": 3061,
+    "runtime": 91,
+    "genres": [
+      "Fantasy",
+      "Thriller"
+    ],
+    "budgetUSD": 82126072,
+    "revenueUSD": 507529735,
+    "productionCompany": "Warner Bros"
+  },
+  {
+    "title": "And Their Children After Them",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/memf03JOexe9scX0Nxj16uXcQZi.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for And Their Children After Them",
+    "rating": 7.547,
+    "voteCount": 3023,
+    "runtime": 157,
+    "genres": [
+      "Romance",
+      "Thriller"
+    ],
+    "budgetUSD": 232928796,
+    "revenueUSD": 336514211,
+    "productionCompany": "Disney"
+  },
+  {
+    "title": "Flow",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/imKSymKBK7o73sajciEmndJoVkR.jpg",
+    "releaseDate": "2025-07-08",
+    "overview": "Overview for Flow",
+    "rating": 6.59,
+    "voteCount": 218,
+    "runtime": 159,
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "budgetUSD": 25045441,
+    "revenueUSD": 603221695,
+    "productionCompany": "Netflix"
+  }
+]

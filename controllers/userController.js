@@ -1,86 +1,97 @@
-const asyncHandler = require("express-async-handler");
-const env = require("../config/environment");
-const User = require("../models/userModel");
-const tokenUtils = require("../middlewares/jwt");
+const User = require("../models/UserModel");
+const bcrypt = require("bcryptjs");
 
-// [POST] register user
-const register = asyncHandler(async (req, res) => {
-    const { email, password } = req.body;
-    if (!email || !password) {
-        return res.status(400).json({
-            success: false,
-            mes: "Missing input!",
+// 📌 Lấy tất cả users
+exports.getAllUsers = async (req, res) => {
+    try {
+        const users = await User.find().populate(
+            "watchedMovies favoriteMovies"
+        );
+        res.json(users);
+    } catch (err) {
+        res.status(500).json({
+            message: "Lỗi lấy danh sách người dùng",
+            error: err,
         });
     }
-    // Check if user already exists
-    const userExists = await User.findOne({ email });
-    if (userExists) {
-        return res.status(400).json({
-            success: false,
-            mes: "User already exists!",
-        });
-    } else {
-        // Create new user
-        const newUser = await User.create({ email, password });
-        return res.status(201).json({
-            success: newUser ? true : false,
-            mes: newUser
-                ? "User created successfully!"
-                : "Failed to create user!",
-        });
-    }
-});
+};
 
-// [POST] login user
-const login = asyncHandler(async (req, res) => {
-    const { email, password } = req.body;
-    if (!email || !password) {
-        return res.status(400).json({
-            success: false,
-            mes: "Missing input!",
-        });
+// 📌 Lấy 1 user theo ID
+exports.getUserWithMovies = async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id)
+            .populate("watchedMovies")
+            .populate("favoriteMovies");
+        if (!user)
+            return res.status(404).json({ message: "Không tìm thấy user" });
+        res.json(user);
+    } catch (err) {
+        res.status(500).json({ message: "Lỗi khi lấy user", error: err });
     }
-    // Check if user exists
-    const userResponse = await User.findOne({ email });
-    if (!userResponse) {
-        return res.status(400).json({
-            success: false,
-            mes: "User not found!",
-        });
+};
+
+// 📌 Cập nhật thông tin user
+exports.updateUser = async (req, res) => {
+    try {
+        const { password, ...rest } = req.body;
+
+        const updateData = { ...rest };
+
+        // Nếu cập nhật mật khẩu mới
+        if (password) {
+            const hash = await bcrypt.hash(password, 10);
+            updateData.passwordHash = hash;
+        }
+
+        const updated = await User.findByIdAndUpdate(
+            req.params.id,
+            updateData,
+            {
+                new: true,
+            }
+        );
+
+        if (!updated)
+            return res.status(404).json({ message: "User không tồn tại" });
+
+        res.json(updated);
+    } catch (err) {
+        res.status(500).json({ message: "Lỗi cập nhật user", error: err });
     }
-    // Check password
-    const isMatch = await userResponse.isCorrectPassword(password);
-    if (!isMatch) {
-        return res.status(400).json({
-            success: false,
-            mes: "Invalid credentials!",
-        });
+};
+
+// 📌 Xoá user
+exports.deleteUser = async (req, res) => {
+    try {
+        const deleted = await User.findByIdAndDelete(req.params.id);
+        if (!deleted)
+            return res.status(404).json({ message: "User không tồn tại" });
+        res.json({ message: "Đã xoá user" });
+    } catch (err) {
+        res.status(500).json({ message: "Lỗi xoá user", error: err });
     }
-    // Token generation
-    const accessToken = tokenUtils.generateAccessToken(
-        userResponse._id,
-        userResponse.role
-    );
-    // Return user data (excluding password, role and refreshToken)
-    const { password: _, ...userData } = userResponse.toObject();
-    return res.status(200).json({
-        success: true,
-        accessToken,
-        userData,
+};
+
+// 📌 Thêm phim đã xem
+exports.addWatchedMovie = async (req, res) => {
+    await User.findByIdAndUpdate(req.params.id, {
+        $addToSet: { watchedMovies: req.params.movieId },
     });
-});
+    res.json({ message: "Đã thêm vào watched" });
+};
 
-// [GET] get all users (for admin)
-const getAllUsers = asyncHandler(async (req, res) => {
-    const users = await User.find().select('-password -refreshToken -role');
-    return res.status(200).json({
-        success: users ? true : false,
-        users,
+// 📌 Thêm phim yêu thích
+exports.addFavoriteMovie = async (req, res) => {
+    await User.findByIdAndUpdate(req.params.id, {
+        $addToSet: { favoriteMovies: req.params.movieId },
     });
-});
+    res.json({ message: "Đã thêm vào favorite" });
+};
 
-module.exports = {
-    register,
-    login,
-    getAllUsers,
+// 📌 Xoá phim khỏi yêu thích
+exports.removeFavoriteMovie = async (req, res) => {
+    await User.findByIdAndUpdate(req.params.id, {
+        $pull: { favoriteMovies: req.params.movieId },
+    });
+    res.json({ message: "Đã xoá khỏi favorite" });
 };

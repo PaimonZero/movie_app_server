@@ -1,29 +1,20 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
 const movieSchema = new mongoose.Schema(
-    {
-        source: {
-            type: String,
-            enum: ["tmdb", "manual"],
-            default: "manual",
-            required: true,
-        },
-        tmdbId: { type: Number, default: null },
-        title: {
-            type: String,
-            required: function () {
-                return this.source === "manual";
-            },
-        },
-        overview: String,
-        genres: [String],
-        releaseDate: Date,
-        posterUrl: String,
-        trailerUrl: String,
-        videoUrl: String,
-        createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-    },
-    { timestamps: true }
-);
+  {
+    posterUrl: { type: String, required: true },
+    title: { type: String, required: true },
+    releaseDate: { type: Date, required: true },
+    runtime: { type: Number, required: true },
+    rating: { type: Number, required: true },
+    voteCount: { type: Number, required: true },
+    overview: { type: String, required: true },
+    genres: [{ type: String }],
+    budgetUSD: { type: Number, default: 0 },
+    revenueUSD: { type: Number, default: 0 },
+    productionCompany: { type: String, required: true },
+  },
+  { timestamps: true }
+)
 
-module.exports = mongoose.model("Movie", movieSchema);
+module.exports = mongoose.model("Movie", movieSchema)
