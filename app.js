@@ -28,11 +28,13 @@ const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const movieRoutes = require("./routes/movieRoutes");
 const favoriteRoutes = require("./routes/favoriteRoutes");
+const watchedMovieRoutes = require("./routes/watchedMovieRoutes");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/movies", movieRoutes);
 app.use("/api/favorites", favoriteRoutes);
+app.use("/api/watched", watchedMovieRoutes);
 
 // Connect MongoDB
 mongoose

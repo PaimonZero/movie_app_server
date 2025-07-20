@@ -37,8 +37,8 @@ exports.getFavoritesByUser = async (req, res) => {
 //xóa phim yêu thích 
 exports.removeFavorite = async (req, res) => {
     try {
-        const { userId, tmdbId } = req.body;
-        const deleted = await Favorite.findOneAndDelete({ user: userId, tmdbId });
+        const { favoriteId } = req.body;
+        const deleted = await Favorite.findByIdAndDelete(favoriteId);
         if (!deleted) {
             return res.status(404).json({ message: "Không tìm thấy phim yêu thích để xóa" });
         }
