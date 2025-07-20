@@ -95,3 +95,31 @@ exports.removeFavoriteMovie = async (req, res) => {
     });
     res.json({ message: "Đã xoá khỏi favorite" });
 };
+
+// 📌 Lấy tất cả phim đã xem
+exports.getWatchedMovies = async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id)
+            .populate("watchedMovies")
+            .populate("favoriteMovies");
+        if (!user)
+            return res.status(404).json({ message: "Không tìm thấy user" });
+        res.json(user.watchedMovies);
+    } catch (err) {
+        res.status(500).json({ message: "Lỗi khi lấy phim đã xem", error: err });
+    }
+};
+
+// 📌 Lấy tất cả phim yêu thích
+exports.getFavoriteMovies = async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id)
+            .populate("watchedMovies")
+            .populate("favoriteMovies");
+        if (!user)
+            return res.status(404).json({ message: "Không tìm thấy user" });
+        res.json(user.favoriteMovies);
+    } catch (err) {
+        res.status(500).json({ message: "Lỗi khi lấy phim yêu thích", error: err });
+    }
+};
