@@ -27,10 +27,12 @@ function getLocalIpAddress() {
 const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const movieRoutes = require("./routes/movieRoutes");
+const favoriteRoutes = require("./routes/favoriteRoutes");
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/movies", movieRoutes);
+app.use("/api/favorites", favoriteRoutes);
 
 // Connect MongoDB
 mongoose
