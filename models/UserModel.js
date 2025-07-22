@@ -8,6 +8,8 @@ const userSchema = new mongoose.Schema(
     role: { type: String, enum: ["user", "admin"], default: "user" },
     watchedMovies: [{ type: mongoose.Schema.Types.ObjectId, ref: "Movie" }],
     favoriteMovies: [{ type: mongoose.Schema.Types.ObjectId, ref: "Movie" }],
+    otp: { type: String }, // Thêm trường OTP
+    otpExpires: { type: Date }, // Thời hạn OTP
   },
   { timestamps: true }
 )
